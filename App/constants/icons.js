@@ -18,6 +18,8 @@ const sugar = 'https://i.imgur.com/zhnHfrj.png'
 const shrimp = 'https://i.imgur.com/hlxa48J.png'
 const tomato = 'https://i.imgur.com/By4r9Jo.png'
 
+const bag = require('../../assets/icons/bag.png')
+
 export default {
   anchovy,
   coriander,
@@ -38,4 +40,5 @@ export default {
   pepper,
   salt,
   sugar,
+  bag,
 }
