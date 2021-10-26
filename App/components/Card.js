@@ -8,28 +8,28 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     width: SIZES.width * 0.85,
-    height: 180,
-    borderRadius: SIZES.radius,
-    marginVertical: 10,
+    height: 150,
+    borderRadius: 2,
+    marginVertical: 15,
     paddingLeft: 20,
-    borderWidth: 1.5,
   },
 
   img: {
     width: 80,
     height: 80,
-    // marginHorizontal: 20,
   },
   textsContainer: {
-    // marginHorizontal: 40,
     paddingVertical: 10,
     width: 200,
+    marginRight: 10,
   },
   title: {
     ...FONTS.h1,
     fontWeight: 'bold',
   },
-  desc: {},
+  desc: {
+    ...FONTS.body3,
+  },
 })
 const Card = ({ cardItem }) => {
   return (
