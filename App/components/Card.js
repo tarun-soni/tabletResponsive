@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     // width: 200,
     maxWidth: 350,
     marginHorizontal: SIZES.width * 0.05,
-    // marginRight: 80,
+    marginRight: 55,
   },
   title: {
     ...FONTS.h1,

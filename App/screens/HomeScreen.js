@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
   cardsContainer: {
     justifyContent: 'center',
     alignItems: 'center',
+    flex: 1,
   },
 })
 
