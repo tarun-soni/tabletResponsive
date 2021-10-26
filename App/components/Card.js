@@ -6,22 +6,24 @@ const styles = StyleSheet.create({
   bg: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
     width: SIZES.width * 0.85,
     height: 150,
+    // height: SIZES.height * 0.2,
     borderRadius: 2,
     marginVertical: 15,
-    paddingLeft: 20,
+    paddingHorizontal: 20,
   },
-
   img: {
-    width: 80,
-    height: 80,
+    width: 65,
+    height: 65,
+    marginLeft: SIZES.width * 0.02,
   },
   textsContainer: {
     paddingVertical: 10,
-    width: 200,
-    marginRight: 10,
+    // width: 200,
+    maxWidth: 350,
+    marginHorizontal: SIZES.width * 0.05,
+    // marginRight: 80,
   },
   title: {
     ...FONTS.h1,

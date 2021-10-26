@@ -11,7 +11,7 @@ export const cards = [
   {
     id: 2,
     title: 'Lunch',
-    desc: 'All happiness depends on leisurely breakfast',
+    desc: 'All happiness depends on leisurely breakfast,depends on leisurely',
     img: icons.garlic,
     bg: '#adc793',
   },
