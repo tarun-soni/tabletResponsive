@@ -3,6 +3,5 @@ module.exports = {
   extends: '@react-native-community',
   rules: {
     semi: 0,
-    'react-native/no-inline-styles': 'allow',
   },
 }
