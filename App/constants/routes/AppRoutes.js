@@ -1,27 +1,18 @@
 import React from 'react'
 
-import { Image, TouchableOpacity } from 'react-native'
-import HomeScreen from '../../screens/HomeScreen'
-import icons from '../icons'
+import HomeFirst from '../../screens/Home/HomeFirst'
+import MealType from '../../screens/Home/MealType'
+import { HOME_FIRST, MEAL_TYPE } from '../screenNames'
 
-export const HOMESCREEN = 'HOMESCREEN'
-
-const AppRoutes = [
+const HomeRoutes = [
   {
-    name: HOMESCREEN,
-    component: HomeScreen,
-    options: {
-      headerTitle: 'Menu',
-      headerRight: () => (
-        <TouchableOpacity>
-          <Image source={icons.bag} style={{ width: 20, height: 20 }} />
-        </TouchableOpacity>
-      ),
-      // headerLeft: () => (
-      //   <Image source={icons.} style={{ width: 20, height: 20 }} />
-      // ),
-    },
+    name: HOME_FIRST,
+    component: HomeFirst,
+  },
+  {
+    name: MEAL_TYPE,
+    component: MealType,
   },
 ]
 
-export { AppRoutes }
+export { HomeRoutes }

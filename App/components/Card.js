@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 import { FONTS, SIZES } from '../constants/theme'
 
 const styles = StyleSheet.create({
@@ -33,16 +34,18 @@ const styles = StyleSheet.create({
     ...FONTS.body3,
   },
 })
-const Card = ({ cardItem }) => {
+const Card = ({ cardItem, onCardPress }) => {
   return (
-    <View style={[styles.bg, { backgroundColor: cardItem.bg }]}>
-      <Image style={styles.img} source={{ uri: cardItem.img }} />
-      <View style={styles.textsContainer}>
-        <Text style={styles.title}>{cardItem.title}</Text>
+    <TouchableOpacity onPress={() => onCardPress(cardItem.title)}>
+      <View style={[styles.bg, { backgroundColor: cardItem.bg }]}>
+        <Image style={styles.img} source={{ uri: cardItem.img }} />
+        <View style={styles.textsContainer}>
+          <Text style={styles.title}>{cardItem.title}</Text>
 
-        <Text style={styles.desc}>{cardItem.desc}</Text>
+          <Text style={styles.desc}>{cardItem.desc}</Text>
+        </View>
       </View>
-    </View>
+    </TouchableOpacity>
   )
 }
 export default Card
