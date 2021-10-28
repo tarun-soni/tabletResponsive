@@ -8,10 +8,16 @@ const HomeRoutes = [
   {
     name: HOME_FIRST,
     component: HomeFirst,
+    options: {
+      headerShown: false,
+    },
   },
   {
     name: MEAL_TYPE,
     component: MealType,
+    options: {
+      headerShown: false,
+    },
   },
 ]
 
